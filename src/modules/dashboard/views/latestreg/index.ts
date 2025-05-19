@@ -1,0 +1,1 @@
+export { default as latestreg } from './latestreg';
