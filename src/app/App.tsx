@@ -1,6 +1,6 @@
 import React from "react";
 import { renderRoutes, routes } from "../modules/shared/routes/routes";
-import supabase from "../supabase"
+import supabase from "../../supabaseClient"
 const App = () => {
   console.log(supabase)
   return renderRoutes(routes);
