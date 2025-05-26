@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Space, Table, Tag, Modal } from 'antd';
-import { Eye, Check, X , Trash} from "lucide-react";
+import { Eye, Check, X, Trash } from "lucide-react";
 import logo from "../../../auth/assets/logo.png";
 import homeIcon from '../../../dashboard/assets/home.png';
 import registrationsIcon from '../../../dashboard/assets/registrations.png';
@@ -27,7 +27,7 @@ export default function CreateJob() {
     console.log('selectedRowKeys changed: ', newSelectedRowKeys);
     setSelectedRowKeys(newSelectedRowKeys);
   };
-  
+
 
   const rowSelection = {
     selectedRowKeys,
@@ -83,13 +83,13 @@ export default function CreateJob() {
       key: 'action',
       render: (_, record) => (
         <Space size="middle">
-          <button 
+          <button
             onClick={() => handleActionClick('view', record)}
             className="p-2 rounded hover:bg-gray-100">
             <Eye className="w-7 h-7 text-gray-600" />
           </button>
-          
-          <button 
+
+          <button
             onClick={() => handleActionClick('reject', record)}
             className="p-2 rounded hover:bg-red-100">
             <X className="w-7 h-7 text-red-600" />
@@ -201,7 +201,7 @@ export default function CreateJob() {
 
       {/* Main Content */}
       <main className="flex-1 bg-white px-16 py-12">
-        
+
         {/* Job Title + Action Buttons */}
         <div className="flex items-center justify-between mb-6">
           <div className="flex items-center gap-4">
@@ -223,7 +223,7 @@ export default function CreateJob() {
           <h2 className="text-2xl font-semibold mt-10">Last registrations</h2>
           <p className="text-gray-400 text-xl mb-8">Keep Lorem IpsumLorem IpsumLorem. </p>
         </div>
-       
+
         <div>
           <h2 className="text-3xl font-semibold mt-10 mb-2">Latest hiring employee</h2>
         </div>
@@ -265,7 +265,7 @@ export default function CreateJob() {
           </div>
          </div>
          )} */}
-     
+
 
         {/* Delete Modal */}
         {isDeleteModalVisible && (

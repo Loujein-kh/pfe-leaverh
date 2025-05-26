@@ -2,7 +2,7 @@ import Settings from "./settings";
 
 const settingsRoutes = [
   {
-    path: "/settings", // 👈 Dynamic route with ID
+    path: "/settings", 
     element: <Settings />,
   },
 ];

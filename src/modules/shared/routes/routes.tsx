@@ -14,11 +14,12 @@ import settingsRoutes from "../../dashboard/views/settings/routes";
 import noregRoutes from "../../dashboard/views/noreg/routes";
 import employeeRoutes from "../../dashboard/views/employee/routes";
 import latestRegRoutes from "../../dashboard/views/latestreg/routes";
-import leaves1Routes from "../../dashboard/views/leaves1/routes"; // ✅ Leaves1 import
+import leaves1Routes from "../../dashboard/views/leaves1/routes"; 
 import leaves2Routes from "../../dashboard/views/leaves2/routes";
 import leaves3Routes from "../../dashboard/views/leaves3/routes";
 import leaves4Routes from "../../dashboard/views/leaves4/routes";
-// Import the JobDetails component
+import recordingsRoutes from "../../dashboard/views/recordings/routes";
+
 import JobDetails from "../../dashboard/views/jobdetails/jobdetails";
 
 // Type for route objects
@@ -41,7 +42,8 @@ export const routes: IRoute[] = [
   ...leaves1Routes,
   ...leaves2Routes,
   ...leaves3Routes,
-  ...leaves4Routes, // ✅ Add Leaves1 routes
+  ...leaves4Routes,
+  ...recordingsRoutes, 
 
   {
     path: "/jobdetails",
